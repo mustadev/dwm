@@ -8,6 +8,25 @@ Requirements
 In order to build dwm you need the Xlib header files.
 
 
+```bash
+sudo apt-get install libx11-dev
+```
+
+for *X11/Xlib.h*
+
+```bash
+sudo apt install libxft-dev
+```
+
+for *X11/Xft/Xft.h*
+
+```bash
+sudo apt-get install libxinerama-dev
+```
+
+for *X11/extensions/Xinerama.h*
+
+
 Installation
 ------------
 Edit config.mk to match your local setup (dwm is installed into
