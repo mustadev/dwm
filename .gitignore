@@ -1,5 +1,7 @@
 # Generated config from config.def.h
 config.h
+# ignore generated binary
+dwm
 # Prerequisites
 *.d
 
