@@ -67,6 +67,9 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *volup[]    = { "amixer", "set", "Master", "5%+", NULL};
 static const char *voldown[]  = { "amixer", "set", "Master", "5%-", NULL};
 static const char *volmute[]  = { "amixer", "set", "Master", "toggle", NULL};
+static const char *brightnessdown[] = { "xbacklight", "-dec", "5", NULL};
+static const char *brightnessup[] = { "xbacklight", "-inc", "5", NULL};
+
 
 static const char *firefox[]  = { "firefox", NULL };
 
@@ -111,6 +114,10 @@ static Key keys[] = {
 	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = volup} },
 	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = voldown} },
 	{ 0,                            XF86XK_AudioMute, spawn, {.v = volmute} },
+	{ 0,                            XF86XK_MonBrightnessUp, spawn, {.v = brightnessup} },
+	{ 0,                            XF86XK_MonBrightnessDown, spawn, {.v = brightnessdown} },
+	{ MODKEY|ShiftMask, XK_Right,      spawn,          {.v = brightnessup} },
+	{ MODKEY|ShiftMask, XK_Left,   spawn,      {.v = brightnessdown} },
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
