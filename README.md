@@ -2,6 +2,8 @@ dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
+**Default Keyboard Layout is AZERY**
+_change Keyboard shortcuts using config.h/config.def.h_
 
 Requirements
 ------------
